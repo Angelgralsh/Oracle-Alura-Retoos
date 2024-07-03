@@ -1,0 +1,23 @@
+let numeroSecreto = 4;
+let numeroUsuario;
+let intentos = 1;
+let palabraVeces = "vez";
+
+while (numeroUsuario !== numeroSecreto) {
+  numeroUsuario = parseInt(prompt("Adivina el número secreto:"));
+
+  if (numeroUsuario > numeroSecreto) {
+    console.log("El número es menor");
+  } else if (numeroUsuario < numeroSecreto) {
+    console.log("El número es mayor");
+  } else {
+    console.log(`¡Correcto! Realizaste la acción en ${intentos} ${palabraVeces}`);
+  }
+
+  if (numeroUsuario !== numeroSecreto) {
+    intentos++;
+    if (intentos > 1) {
+      palabraVeces = "veces";
+    }
+  }
+}
