@@ -1,2 +1,2 @@
 # Oracle-Alura
-This repository is a summarize challenges during curse 
+This repository is a summarize challenges during course
